@@ -1,0 +1,804 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass PhDThesisLyX
+\begin_preamble
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                            %%
+%% Class ``PhD Thesis LyX''                                                   %%
+%%                                                                            %%
+%% A PhD thesis LyX template for Cambridge University Engineering Department  %%
+%%                                                                            %%
+%% Version: v1.0                                                              %%
+%% Authors: Krishna Kumar                                                     %%
+%% Date: 10/01/2014 (inception)                                               %%
+%% License: MIT License (c) 2014 Krishna Kumar                                %%
+%% GitHub Repo: https://github.com/kks32/PhDThesisLyX			      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{Cómo escribir su tesis doctoral en LyX}
+\author{Alain Pereira Toledo}
+\dept{Centro de Investigaciones de la Informática}
+\university{Universidad Central "Marta Abreu" de Las Villas}
+\crest{\includegraphics[width=0.25\textwidth]{d:/Temp/UCLV_logo.png}}
+\degree{Doctor en Ciencias Técnicas}
+\college{Facultad de Matemática Física y Computación}
+\degreedate{2018}
+\end_preamble
+\options letterpaper,12pt,authoryear,times,nottoc
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Plantilla de tesis doctoral del Centro de Investigaciones de la Informática
+ en LyX2.0
+\end_layout
+
+\begin_layout Plain Layout
+basado en: 
+\series bold
+\lang english
+Cambridge University Engineering Department Thesis Template ported to LyX2.0,
+ bajo Licencia del MIT.
+\end_layout
+
+\begin_layout Plain Layout
+Autor: Alain Pereira Toledo
+\end_layout
+
+\begin_layout Plain Layout
+Website: https://github.com/kks32/PhDThesisLyX
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Datos de la Tesis
+\end_layout
+
+\begin_layout Plain Layout
+Ir a 
+\family sans
+Document > Settings > LaTeX preamble
+\family default
+ para modificar el 
+\family sans
+título, autor, año, departamento
+\family default
+.
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Opciones de personalización
+\end_layout
+
+\begin_layout Plain Layout
+Para establecer las opciones de personalizaciones permitidas por el archivo
+ de la clase, ir a Document > Settings > Document class e introducir 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+a4paper,12pt,numbered,oneside,print
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ sin comillas en el campo de personalización.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Tamaño de hoja
+\series default
+: a4paper / a5paper / letterpaper
+\end_layout
+
+\begin_layout Plain Layout
+`letterpaper', es decir, la hoja tamaño Carta es la recomendada para la
+ presentación de las tesis doctorales en Cuba, no obstante, la clase de
+ LaTeX ofrece la posibilidad de generar el documento en las dimensiones
+ correspondientes a la A4 y A5.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Tamaño de fuente: 
+\series default
+10pt / 11pt / 12pt
+\end_layout
+
+\begin_layout Plain Layout
+`11pt' or `12pt'(default): El tamaño de fuente 10pt no se recomienda por
+ las normas cubanas, sino 12pt.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Layout: 
+\series default
+`
+\series bold
+oneside
+\series default
+' or `
+\series bold
+twoside
+\series default
+'(default): Impresión a doble cara o a una cara.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Modo (print / online)
+\series default
+: Use `print' para la versión de impresión, con los márgenes y diseño de
+ página (layout) apropiados.
+ Dejar en blanco el campo de la opción activará la version Online.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+draft
+\series default
+: para modo borrador, sin cargar ninguna imagen (similar al borrador de
+ libro)
+\end_layout
+
+\begin_layout Plain Layout
+Nota: la opción 
+\family sans
+nottoc
+\family default
+ se usa para excluir el índice general del propio índice general.
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Estilo bibliográfico: 
+\end_layout
+
+\begin_layout Plain Layout
+Para definir las opciones de clase tale como el estilo bibliográfico (
+\series bold
+numbered
+\series default
+ / 
+\series bold
+authoryear
+\series default
+) ir a Document > Settings > Document class e introducir 
+\begin_inset Quotes eld
+\end_inset
+
+numbered
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+authoryear
+\begin_inset Quotes erd
+\end_inset
+
+ sin comillas en el campo de personalización.
+ Por defecto, aparece 
+\begin_inset Quotes eld
+\end_inset
+
+authoryear
+\begin_inset Quotes erd
+\end_inset
+
+, que es el apropiado parea la norma Harvard, estilo en el que aparecen
+ las referencias y recomendado para las tesis doctorales cubanas.
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Page Style
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+default (leave empty)
+\series default
+': For Page Numbers in Header (Left Even, Right Odd) and Chapter Name in
+ Header (Right Even) and Section Name (Left Odd).
+ Blank Footer.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+`PageStyleI'
+\series default
+: Chapter Name next & Page Number on Even Side (Left Even).
+ Section Name & Page Number in Header on Odd Side (Right Odd).
+ Footer is empty.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+`PageStyleII'
+\series default
+: Chapter Name on Even Side (Left Even) in Header.
+ Section Number % and Section Name in Header on Odd Side (Right Odd).
+ Page numbering in footer 
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Fuente
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+times
+\series default
+`: (Las normas recomiendan Times New Roman).
+ Specifying times option in the document class will use `mathptpx` or `Times`
+ font with Math Support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+fourier
+\series default
+`: fourier font with math support
+\end_layout
+
+\begin_layout Plain Layout
+`
+\series bold
+default (empty)
+\series default
+`: When no font is specified, `Latin Modern` is used as the default font
+ with Math Support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Vaya a Document > Settings > Document class e incluya `times` or `fourier`
+ en el campo de personalizaciones.
+ Por defecto, está incluido `times`.
+\end_layout
+
+\begin_layout Plain Layout
+********************************************************************************
+********************************
+\end_layout
+
+\begin_layout Plain Layout
+Logo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Title Page
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+% FrontMatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+tablename}{Tabla}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Dedication/Dedication.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Acknowledgements/Acknowledgements.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Abstract/Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+abstract}{
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+cleardoublepage
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+setsinglecolumn
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+chapter*{
+\backslash
+centering 
+\backslash
+Large Abstract}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+thispagestyle{empty}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset CommandInset include
+LatexCommand include
+filename "Abstract_EN/Abstract_EN.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% List of Contents, Figures and Tables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Ver documentación del paquete tocbibind para manipular los índices
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+listtablename}{Índice de tablas}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+tablename}{Tabla}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+contentsname}{Contenidos}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+renewcommand{
+\backslash
+listfigurename}{Figuras}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% To print nomenclature
+\end_layout
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+printnomenclature[space] %space can be set as 2.5cm between symbol and descriptio
+n
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+printnomencl
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{romanpages}
+\end_layout
+
+\begin_layout Plain Layout
+
+% Main matter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Introduction/Introduction.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter1/Chapter1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter2/Chapter2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter3/Chapter3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% Back matter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\bibname}{Referencias}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "References/references"
+options "harvard"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix1/Appendix1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Appendix2/Appendix2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
