@@ -479,6 +479,10 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 \newcommand{\@dept}{}
 \newcommand{\dept}[1]{\renewcommand{\@dept}{#1}}
 
+% The name of your career(eg. Computer Engineering)
+\newcommand{\@career}{}
+\newcommand{\career}[1]{\renewcommand{\@career}{#1}}
+
 % The name of your college (eg. King's)
 \newcommand{\@college}{}
 \newcommand{\college}[1]{\renewcommand{\@college}{#1}}
@@ -538,39 +542,45 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 
 %***********Title Page**************************
 
+% Crest
+\begin{flushleft}
+{\@crest \par}
+\end{flushleft}
+\vspace{.2\PHD@titlepagespacing}
+
+% Department and career
+{\large \@dept \par}
+{\large \@career \par}
+\vspace{.1\PHD@titlepagespacing}
+
+% Submission Text
+{\large \expandafter\MakeUppercase\expandafter{\submissiontext} \par}
+\vspace*{.1ex}
+{\large \expandafter\MakeUppercase\expandafter{\@degree} \par}
+\vspace{.1\PHD@titlepagespacing}
+
+\end{center}
+
 % Title
 %\setlength{\parskip}{1.5cm}
 %\vspace*{3ex}
 \thispagestyle{empty}
-{\Huge \bfseries{\@title} \par}
-\vspace{.1\PHD@titlepagespacing}
-
-% Crest
-{\@crest \par}
+{\Large \bfseries{\@title} \par}
 \vspace{.1\PHD@titlepagespacing}
 
 % Author
-{\Large \bfseries{\@author} \par}
+{\large \bfseries{\@author} \par}
 \vspace*{0.1ex}
-
-% Department and University
-{\large \@dept \par}
-\vspace*{1ex}
-{\large \@university \par}
-\vspace{.1\PHD@titlepagespacing}
-
-% Submission Text
-{\large \submissiontext \par}
-\vspace*{.1ex}
-{\large \textit {\@degree} \par}
-\vspace{.1\PHD@titlepagespacing}
 
 % Advisor
 %\vspace*{3ex}
-{\Large \@advisor \par}
+{\large \@advisor \par}
 \vspace*{0.1ex}
 
-\end{center}
+% University
+%{\large \@university \par}
+%\vspace{.1\PHD@titlepagespacing}
+
 \vfill
 \large
 \begin{minipage}{0.49\textwidth}

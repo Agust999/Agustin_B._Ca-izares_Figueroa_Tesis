@@ -9,27 +9,29 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                            %%
-%% Class ``PhD Thesis LyX''                                                   %%
+%% Class ``UNISS Thesis LyX''                                                   %%
 %%                                                                            %%
-%% Una plantilla para tesis doctorales en el CII, UCLV                        %%
+%% Una plantilla para tesis de pregrado de la UNISS                        %%
 %%                                                                            %%
-%% Version: v1.0                                                              %%
-%% Authors: Alain Pereira Toledo                                              %%
-%% Date: 05/29/2017 (inception)                                               %%
+%% Version: v1.2                                                              %%
+%% Authors: Alain Pereira Toledo y Luis Quintero Domínguez                                              %%
+%% Date: 22/06/2020 (inception)                                               %%
 %%                                                                            %%
 %% 			                                            %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[spanish, es-tabla]{babel}
-\title{Título de la tesis}
-\author{Nombre del autor}
-\dept{Departamento de Ingeniería Informática}
+\title{Título de la tesis \\ Title of the thesis in english}
+\author{Autor: Nombre del autor}
+\dept{DEPARTAMENTO DE INGENIERÍA INFORMÁTICA}
+\career{CARRERA: INGENIERÍA INFORMÁTICA}
 \university{Universidad de Sancti Spíritus «José Martí Pérez»}
-\crest{\includegraphics[width=0.25\textwidth]{../Figs/UNISS_logoByN.png}}
+%\crest{\includegraphics[height=0.75\textwidth]{../Figs/uniss-logo-largo.png}}
+\crest{\includegraphics[width=1\textwidth]{../Figs/logo-uniss-FCTE.png}}
 \advisor{Tutor: Nombre del primer tutor \\ Nombre del segundo tutor}
 \degree{Ingeniero Informático}
 %\college{Facultad de Matemática Física y Computación}
-\degreedate{Sancti Spíritus, 2020}
+\degreedate{Sancti Spíritus, 2020 \\ Copyright \copyright UNISS}
 
 \renewcommand{\@chapapp}{CAP\'ITULO}
 
@@ -117,7 +119,7 @@ status open
 \series bold
 Plantilla de tesis de grado Departamento de Ingeniería Informática de la
  UNISS en \SpecialChar LyX
-2.0
+2.3
 \end_layout
 
 \begin_layout Plain Layout
@@ -477,7 +479,7 @@ end{titlepage}
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Declaration/Declaration.lyx"
+filename "Copyright/Copyright.lyx"
 
 \end_inset
 
@@ -794,7 +796,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "References/references tesis,References/references tesis-2"
+bibfiles "References/references tesis,References/references tesis-2,References/references"
 options "dcu"
 
 \end_inset
