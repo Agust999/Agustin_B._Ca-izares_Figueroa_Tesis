@@ -544,7 +544,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 
 % Crest
 \begin{flushleft}
-{\@crest \par}
+\includegraphics[width=1\textwidth]{Figs/logo-uniss-FCTE.PNG}\par
 \end{flushleft}
 \vspace{.2\PHD@titlepagespacing}
 
@@ -768,7 +768,7 @@ font in the preamble.tex file by specifying `customfont' in the class options}
 % University Crest Box
 \newsavebox{\PHD@crest}
 \begin{lrbox}{\PHD@crest}
-\@crest
+\includegraphics[width=1\textwidth]{Figs/logo-uniss-FCTE.PNG}
 \end{lrbox}
 
 

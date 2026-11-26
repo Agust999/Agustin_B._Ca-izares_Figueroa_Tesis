@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -7,11 +7,11 @@
 \textclass UNISSThesisLyX
 \options a4paper,titlepage
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language spanish
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -19,7 +19,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -51,9 +53,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -69,17 +81,63 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
 
 \begin_layout abstract
-Aquí es donde se escribe el resumen ...
+En la educación superior cubana,
+ la planificación de los horarios académicos y la gestión de la carga docente son procesos clave para la organización del trabajo institucional.
+ En la Universidad de Sancti Spíritus «José Martí Pérez» (UNISS),
+ estos procesos se gestionaban mediante documentos y hojas de cálculo independientes,
+ lo que dificultaba la actualización y el control de las asignaciones académicas,
+ la detección de conflictos entre docentes,
+ grupos y aulas,
+ y el seguimiento de la distribución de las responsabilidades del profesorado.
+ Este trabajo desarrolla un sistema web para la gestión integrada de los horarios docentes (P4) y la carga docente,
+ centralizando la información académica y relacionando las actividades lectivas programadas con las responsabilidades asignadas a cada profesor.
+ La solución integra la gestión de carreras,
+ planes de estudio,
+ asignaturas y horarios docentes con el registro,
+ cálculo,
+ consulta y seguimiento de la carga docente,
+ e incorpora funcionalidades para la identificación de conflictos y desequilibrios en la distribución del trabajo.
+ La aplicación fue desarrollada bajo la metodología RUP,
+ con un stack tecnológico compuesto por Nuxt.js en el frontend,
+ Express.js en el backend y PostgreSQL como gestor de base de datos,
+ y valida su funcionamiento mediante pruebas funcionales y la valoración de especialistas y usuarios.
+ Con esta herramienta,
+ se logra centralizar y organizar la información,
+ mejorar el control de las asignaciones académicas y facilitar la toma de decisiones en la planificación académica de la UNISS,
+ siendo adaptable a otros contextos universitarios similares.
+\end_layout
+
+\begin_layout abstract
+
+\end_layout
+
+\begin_layout abstract
+
+\series bold
+Palabras clave
+\series default
+:
+ Horario docente (P4),
+ carga docente,
+ gestión académica,
+ sistema web,
+ planificación académica.
 \end_layout
 
 \end_body

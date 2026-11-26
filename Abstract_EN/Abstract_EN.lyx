@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -10,11 +10,11 @@
 \end_preamble
 \options a4paper,titlepage
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language american
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -22,7 +22,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -54,9 +56,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -72,17 +84,59 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
 
 \begin_layout abstract
-Abstract goes here ...
+In Cuban higher education,
+ the planning of academic timetables and the management of teaching workload are key processes for the organization of institutional work.
+ At the University of Sancti Spíritus «José Martí Pérez» (UNISS),
+ these processes were managed through independent documents and spreadsheets,
+ which hindered the updating and control of academic assignments,
+ the detection of conflicts among teachers,
+ groups and classrooms,
+ and the monitoring of the distribution of teaching responsibilities.
+ This work develops a web system for the integrated management of teaching timetables (P4) and teaching workload,
+ centralizing academic information and linking scheduled teaching activities with the responsibilities assigned to each teacher.
+ The solution integrates the management of degree programs,
+ curricula,
+ subjects and teaching timetables with the recording,
+ calculation,
+ consultation and monitoring of teaching workload,
+ and incorporates functionalities for identifying conflicts and imbalances in the distribution of work.
+ The application was developed under the RUP methodology,
+ with a technology stack composed of Nuxt.js on the frontend,
+ Express.js on the backend and PostgreSQL as the database management system,
+ and validates its operation through functional tests and the assessment of specialists and users.
+ With this tool,
+ it is possible to centralize and organize information,
+ improve the control of academic assignments and facilitate decision-making in the academic planning of UNISS,
+ being adaptable to other similar university contexts.
+\end_layout
+
+\begin_layout abstract
+
+\series bold
+Keywords
+\series default
+:
+ Teaching schedule (P4),
+ faculty workload,
+ academic management,
+ web-based system,
+ academic planning.
 \end_layout
 
 \end_body

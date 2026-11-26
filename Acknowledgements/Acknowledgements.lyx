@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -7,11 +7,11 @@
 \textclass UNISSThesisLyX
 \options a4paper,titlepage
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language spanish
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -19,7 +19,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -51,9 +53,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -69,17 +81,79 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
 
 \begin_layout acknowledgements
-Me gustaría agradecer a ...
+Quiero expresar mi más sincero agradecimiento a todas las personas que,
+ de una forma u otra,
+ han contribuido a mi formación académica y al desarrollo de este trabajo.
+\end_layout
+
+\begin_layout acknowledgements
+A la Universidad de Sancti Spíritus 
+\lang american
+“José Martí Pérez”
+\lang spanish
+ (UNISS),
+ por brindarme la oportunidad de formarme como profesional y proporcionarme los conocimientos y experiencias que han contribuido a mi crecimiento personal y académico.
+\end_layout
+
+\begin_layout acknowledgements
+A mi tutor Ing.
+ Msc.
+ Julio Comapanioni Martínez,
+ por su orientación,
+ dedicación,
+ paciencia y valiosos consejos durante el desarrollo de esta investigación.
+\end_layout
+
+\begin_layout acknowledgements
+A todos los profesores que han formado parte de mi trayectoria universitaria,
+ por compartir sus conocimientos,
+ experiencias y enseñanzas,
+ contribuyendo a mi preparación profesional.
+\end_layout
+
+\begin_layout acknowledgements
+A mis compañeros y amigos,
+ por el apoyo,
+ la colaboración y los momentos compartidos durante estos años de estudio,
+ que hicieron de esta etapa una experiencia especial.
+\end_layout
+
+\begin_layout acknowledgements
+De manera muy especial,
+ a mi familia,
+ por su amor,
+ comprensión,
+ sacrificio y apoyo incondicional.
+ Gracias por confiar en mí,
+ motivarme a seguir adelante y acompañarme en cada etapa de este camino.
+\end_layout
+
+\begin_layout acknowledgements
+Finalmente,
+ a todas aquellas personas que,
+ directa o indirectamente,
+ han contribuido a que este logro sea posible.
+\end_layout
+
+\begin_layout acknowledgements
+A todos,
+ muchas gracias.
 \end_layout
 
 \end_body

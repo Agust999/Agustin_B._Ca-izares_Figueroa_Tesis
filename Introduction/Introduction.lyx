@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -7,11 +7,11 @@
 \textclass UNISSThesisLyX
 \options a4paper,titlepage,12pt,numbered
 \use_default_options false
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language spanish
 \language_package default
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -19,7 +19,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -51,9 +53,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -69,11 +81,17 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -83,7 +101,6 @@
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 chapter*{INTRODUCCIÓN
@@ -102,7 +119,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 section*{
 \backslash
@@ -120,7 +136,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 addcontentsline{toc}{chapter}{INTRODUCCIÓN}
 \end_layout
@@ -130,194 +145,380 @@ addcontentsline{toc}{chapter}{INTRODUCCIÓN}
 
 \end_layout
 
-\begin_layout Section*
-Antecedentes
+\begin_layout Standard
+La planificación de los horarios académicos y la gestión de la carga docente constituyen procesos fundamentales para la organización del trabajo en las instituciones de educación superior,
+ debido a la necesidad de coordinar asignaturas,
+ profesores,
+ grupos,
+ aulas y actividades académicas,
+ garantizando una distribución adecuada de los recursos y las responsabilidades.
 \end_layout
 
 \begin_layout Standard
-Contiene una explicación de los principales aspectos que condujeron a la
- realización de la investigación, a modo de antecedentes y justificación.
+En el ámbito internacional,
+ diversas investigaciones han abordado estas problemáticas mediante modelos matemáticos y soluciones informáticas.
  
-\end_layout
+\emph on
 
-\begin_layout Section*
-Planteamiento del problema 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mokhtarim_developing_2021"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ y 
+\emph on
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "saltos_atiencia_pdf_2021"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ desarrollaron modelos de optimización orientados a mejorar la asignación de asignaturas,
+ docentes y espacios físicos.
+ Por otra parte,
+ estudios como los de 
+\emph on
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kenny_life_2023"
+literal "false"
+
+\end_inset
+
+
+\emph default
+,
+
+\emph on
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "crisp_academic_2022"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ y
+\emph on
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "culpepper_making_2021"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ han destacado la importancia de gestionar la carga académica desde una perspectiva integral,
+ considerando no solo las horas de docencia directa,
+ sino también otras responsabilidades que forman parte del trabajo del profesorado.
 \end_layout
 
 \begin_layout Standard
-Escribir el problema científico para caer en las preguntas de investigación.
+En el contexto cubano,
+ 
+\emph on
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "torres_vivanco_pdf_2021"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ desarrollaron un sistema informático para gestionar los planes de trabajo mensuales de los docentes universitarios,
+ mientras que
+\emph on
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hernandez-leyva_sistema_2020"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ propusieron una solución para la elaboración y publicación de horarios docentes en la Universidad de Holguín.
+ Asimismo,
+
+\emph on
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nunez_cruz_procedimiento_2025"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ abordaron el balance entre la carga y la capacidad del personal docente mediante un procedimiento apoyado en herramientas informáticas.
+ Estos antecedentes evidencian los avances en la informatización de ambos procesos,
+ aunque también permiten identificar que generalmente se han tratado de manera independiente.
+\end_layout
+
+\begin_layout Standard
+En Cuba,
+ la organización del proceso docente y la distribución del trabajo del profesorado están respaldadas por disposiciones normativas como la 
+\emph on
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yasunary_resolucion_2022"
+literal "false"
+
+\end_inset
+
+
+\emph default
+ y las regulaciones relacionadas con la sobrecarga del trabajo docente.
+\end_layout
+
+\begin_layout Standard
+La gestión de los horarios académicos y de la carga docente constituye un proceso esencial para la organización y planificación del trabajo en las instituciones de educación superior,
+ pues requiere coordinar las asignaturas,
+ los profesores,
+ los grupos,
+ las aulas y las franjas horarias,
+ así como distribuir y controlar las responsabilidades académicas del profesorado.
+\end_layout
+
+\begin_layout Standard
+En la Universidad de Sancti Spíritus «José Martí Pérez» (UNISS),
+ la gestión del horario docente (P4) y de la carga del profesorado requiere una mayor integración de la información,
+ debido a que su administración mediante documentos y hojas de cálculo independientes dificulta la actualización y el control de las asignaciones académicas,
+ la detección de posibles conflictos entre docentes,
+ grupos y aulas,
+ así como el seguimiento de la distribución de las responsabilidades del profesorado.
+ Esta situación limita la disponibilidad de información centralizada y confiable para los responsables académicos,
+ dificultando la planificación y la toma de decisiones relacionadas con la organización del trabajo docente.
+\end_layout
+
+\begin_layout Standard
+La administración de estos procesos mediante documentos y hojas de cálculo independientes también dificulta mantener la correspondencia entre las actividades lectivas programadas y la carga asignada a cada profesor,
+ además de limitar el seguimiento y la identificación de posibles conflictos o desequilibrios en su distribución.
+ Esta situación evidencia la necesidad de contar con una herramienta informática que permita centralizar y relacionar ambos procesos.
+\end_layout
+
+\begin_layout Standard
+Por ello,
+ la presente investigación se orienta al desarrollo de un sistema web para la gestión integrada del horario académico y la carga docente en la UNISS,
+ que facilite la confección,
+ actualización y consulta del P4,
+ así como el registro y seguimiento de las responsabilidades académicas del profesorado,
+ proporcionando información organizada y confiable que contribuya a mejorar la planificación,
+ el control y la toma de decisiones institucionales.
+ De esta forma,
+ la investigación aporta una solución integrada que no solo centraliza la información,
+ sino que relaciona el horario académico con la carga docente,
+ aspecto que los antecedentes revisados abordan de manera separada
+\end_layout
+
+\begin_layout Standard
+Con la 
+\series bold
+Situación Problemática 
+\series default
+descrita anteriormente,
+ se define como 
+\series bold
+Problema de investigación
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+¿Cómo contribuir a la gestión integrada de los horarios docentes (P4) y la carga docente de los profesores de la Universidad de Sancti Spíritus «José Martí Pérez»?
+\end_layout
+
+\begin_layout Standard
+Para dar respuesta al problema de investigación,
+ se formuló el siguiente 
+\series bold
+Objetivo General
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+Desarrollar y validar un sistema web para la gestión integrada de los horarios docentes (P4) y la carga docente de los profesores de la Universidad de Sancti Spíritus «José Martí Pérez»,
+ que contribuya a mejorar la organización,
+ el seguimiento y el control de la planificación académica institucional.
+\end_layout
+
+\begin_layout Standard
+Para el cumplimiento del objetivo propuesto,
+ se definen los siguientes 
+\series bold
+objetivos específicos
+\series default
+:
 \end_layout
 
 \begin_layout Enumerate
-Pregunta 1
+Analizar los fundamentos teóricos,
+ metodológicos y normativos relacionados con la planificación de horarios docentes y la gestión de la carga académica,
+ así como las soluciones informáticas existentes.
 \end_layout
 
 \begin_layout Enumerate
-Pregunta 2
+Diagnosticar la situación actual de la gestión de horarios y carga docente en la UNISS,
+ identificando las fuentes de información,
+ los actores involucrados y las principales deficiencias del proceso vigente.
 \end_layout
 
 \begin_layout Enumerate
-Pregunta 3
-\end_layout
-
-\begin_layout Subsection*
-Objetivo general
-\end_layout
-
-\begin_layout Standard
-Aquí va el objetivo general.
-\end_layout
-
-\begin_layout Subsection*
-Objetivos específicos
+Diseñar un sistema web para la gestión integrada de los horarios docentes (P4) y la carga docente,
+ a partir de los requisitos identificados en el diagnóstico.
 \end_layout
 
 \begin_layout Enumerate
-Objetivo 1
+Desarrollar el sistema web mediante la metodología RUP y el stack tecnológico definido,
+ integrando la gestión de carreras,
+ planes de estudio,
+ asignaturas,
+ horarios y carga docente.
 \end_layout
 
 \begin_layout Enumerate
-Objetivo 2
-\end_layout
-
-\begin_layout Enumerate
-Objetivo 3
-\end_layout
-
-\begin_layout Subsection*
-Justificación y principales contribuciones de la investigación
+Validar la solución desarrollada mediante pruebas funcionales y técnicas,
+ así como la valoración de especialistas y usuarios finales,
+ para comprobar el cumplimiento de los requisitos y su pertinencia en el contexto universitario.
 \end_layout
 
 \begin_layout Standard
-Aquí van las justificaciones y contribuciones.
-\end_layout
-
-\begin_layout Section*
-Hipótesis de investigación
-\end_layout
-
-\begin_layout Standard
-Aquí va la hipótesis.
-\end_layout
-
-\begin_layout Section*
-Estructura de la investigación
+Para darle cumplimiento al problema de investigación y en correspondencia con el objetivo propuesto,
+ se utilizarán 
+\series bold
+métodos teóricos y empíricos
+\series default
+.
 \end_layout
 
 \begin_layout Standard
-Aquí se describe la estructura en capítulos y anexos.
+A 
+\series bold
+nivel teórico
+\series default
+,
+ los métodos utilizados fueron:
+\end_layout
+
+\begin_layout Itemize
+Análisis y síntesis:
+ se utilizará para estudiar los fundamentos teóricos,
+ metodológicos y normativos relacionados con la planificación de los horarios docentes (P4) y la gestión de la carga docente.
+ Permitirá examinar los elementos que intervienen en ambos procesos,
+ sus características y relaciones,
+ así como integrar los conocimientos obtenidos para fundamentar el diseño de la solución web propuesta.
+\end_layout
+
+\begin_layout Itemize
+Análisis comparativo:
+ se empleará para examinar investigaciones y soluciones informáticas existentes relacionadas con la elaboración de horarios académicos y la gestión de la carga docente.
+ Permitirá identificar sus principales características,
+ funcionalidades y aportes,
+ así como reconocer elementos que puedan servir de referencia para el desarrollo del sistema adaptado a las necesidades de la UNISS.
 \end_layout
 
 \begin_layout Standard
-Aunque no posee actualmente fuentes para justificar sus hipótesis, el profesor
- de filología clásica Richard McClintock asegura que su uso se remonta a
- los impresores de comienzos del siglo XVI.
- Su uso en algunos editores de texto muy conocidos en la actualidad ha dado
- al texto lorem ipsum nueva popularidad.
+A 
+\series bold
+nivel empírico
+\series default
+,
+ se emplearán los siguientes métodos y técnicas:
+\end_layout
+
+\begin_layout Itemize
+Revisión documental:
+ se aplicará para examinar documentos institucionales y normativos relacionados con la planificación académica y la distribución de las responsabilidades docentes.
+ Se tendrán en cuenta los planes de estudio,
+ las asignaturas,
+ los horarios docentes (P4) y otros registros disponibles en la institución,
+ así como las disposiciones normativas que fundamentan estos procesos.
+\end_layout
+
+\begin_layout Itemize
+Entrevista semiestructurada:
+ se utilizará para recopilar información de los actores involucrados en la gestión de los horarios docentes y la carga académica,
+ entre ellos responsables de carrera,
+ jefes de departamento,
+ personal de las secretarías docentes y profesores.
+ Permitirá conocer cómo se desarrollan actualmente estos procesos,
+ identificar sus principales dificultades y precisar las necesidades que deberá satisfacer el sistema propuesto.
+\end_layout
+
+\begin_layout Itemize
+Criterio de especialistas y usuarios:
+ se empleará durante la validación de la solución informática,
+ con el propósito de obtener valoraciones sobre su funcionamiento,
+ pertinencia y correspondencia con las necesidades identificadas en la institución.
+ Se tendrán en cuenta las opiniones de especialistas y usuarios vinculados con los procesos académicos.
 \end_layout
 
 \begin_layout Standard
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Nullam nec ipsum massa.
- Maecenas consectetur vestibulum felis, eu placerat elit luctus in.
- Ut turpis mi, bibendum ac venenatis in, sollicitudin ultricies odio.
- Nam vel erat felis.
- Fusce sapien risus, blandit ut pulvinar sit amet, porttitor vel nunc.
- Mauris purus mi, porta sit amet pharetra nec, bibendum tincidunt justo.
- Maecenas nec tellus et quam hendrerit tempus.
- Fusce ornare mi sed orci volutpat consectetur.
- In sed lectus eget nisl scelerisque ullamcorper.
- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Nullam suscipit laoreet sollicitudin.
- Nullam id nisi enim.
- Praesent congue scelerisque nulla eu lacinia.
+La presente tesis tiene la siguiente 
+\series bold
+estructura de investigación
+\series default
+:
 \end_layout
 
 \begin_layout Standard
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
- cubilia Curae; Phasellus ligula dolor, lobortis at pharetra a, rhoncus
- quis tortor.
- Nulla et urna elit.
- Ut suscipit, velit at mattis tempor, arcu justo malesuada sem, nec aliquet
- justo lacus non neque.
- Mauris erat neque, rhoncus nec gravida at, viverra in erat.
- Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
- inceptos himenaeos.
- Pellentesque interdum odio ac odio varius semper eu eget sapien.
- Phasellus ac lacus vel risus faucibus faucibus eget vitae quam.
- Ut ultricies, dui eget consequat lobortis, dolor eros tempor diam, quis
- viverra dolor tortor ac lorem.
+El documento se inicia con el Capítulo 1,
+ donde se desarrolla el marco teórico referencial y los principales conceptos que constituyen la base de la investigación,
+ abordando la planificación de horarios académicos,
+ la gestión de la carga docente y las soluciones informáticas existentes.
+ Se analizan las principales investigaciones nacionales e internacionales,
+ los modelos y métodos utilizados para la organización de horarios,
+ así como las disposiciones normativas que regulan estos procesos en la educación superior cubana.
 \end_layout
 
 \begin_layout Standard
-Vestibulum aliquet luctus lacus, dignissim viverra felis molestie vel.
- Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
- inceptos himenaeos.
- Duis convallis enim et elit lobortis ullamcorper.
- Mauris ornare faucibus arcu, et tempus arcu fringilla et.
- Proin commodo volutpat velit, vel blandit augue vehicula dictum.
- Aenean adipiscing velit a diam aliquam dapibus.
- Donec eget odio quam.
- Suspendisse eget tortor nec tellus suscipit semper.
- Etiam aliquet porta rhoncus.
- Fusce ac justo nec sem hendrerit porta.
+En el Capítulo 2,
+ se presenta el proceso de análisis y diseño de la aplicación web para la gestión integrada de horarios y carga docente.
+ El desarrollo adopta la metodología RUP como guía estructurada para la construcción del software.
+ Incluye el diagnóstico de la situación actual en la UNISS,
+ la identificación de actores,
+ flujos de información y necesidades institucionales,
+ así como la especificación de requisitos funcionales y no funcionales,
+ la arquitectura,
+ la estructura de datos y las principales interfaces de la solución.
 \end_layout
 
 \begin_layout Standard
-Integer mattis laoreet congue.
- Mauris tincidunt, neque non tempor blandit, arcu tellus pharetra eros,
- eu rhoncus ipsum libero ac tellus.
- Sed sed massa ac odio feugiat ornare.
- Etiam sit amet tortor felis.
- Praesent justo massa, posuere in condimentum ultricies, pharetra id purus.
- Duis tempus nisl vitae ante ullamcorper pretium.
- Suspendisse potenti.
- Pellentesque ullamcorper, ante sed imperdiet vestibulum, ante ligula volutpat
- mauris, a imperdiet nisl ligula ut nulla.
- Integer ut turpis sem, eget adipiscing tortor.
- Quisque cursus augue at sem iaculis eu facilisis tellus placerat.
- Duis ullamcorper facilisis sodales.
+Finalmente,
+ en el Capítulo 3,
+ se aborda la implementación y validación de la aplicación web,
+ asegurando su correcto funcionamiento para la gestión de horarios docentes (P4) y carga docente.
+ Se detallan las funcionalidades desarrolladas para la gestión de carreras,
+ planes de estudio,
+ asignaturas,
+ horarios y carga del profesorado,
+ así como las pruebas realizadas y la valoración de especialistas y usuarios finales para comprobar el cumplimiento de los requisitos y su pertinencia en el contexto institucional.
 \end_layout
 
 \begin_layout Standard
-Sed commodo, lorem sed dapibus posuere, elit ante elementum elit, a tristique
- leo neque non mi.
- Aliquam est risus, vulputate rhoncus consequat nec, semper sit amet elit.
- Curabitur odio purus, vulputate vel commodo ut, malesuada a felis.
- Integer sed tristique risus.
- Nunc arcu odio, tempus eu lacinia ac, fringilla sit amet neque.
- Donec semper, metus eget malesuada dignissim, mauris turpis commodo mauris,
- at imperdiet nunc dolor sit amet erat.
- Sed ut pretium leo.
- Nam rhoncus tellus vitae felis euismod sit amet vestibulum nisi rhoncus.
- Pellentesque ornare egestas dui ac ullamcorper.
- Donec imperdiet laoreet purus molestie porttitor.
- Mauris pellentesque faucibus justo, quis ornare risus viverra sed.
- Suspendisse potenti.
- Nulla vel mauris id nulla ullamcorper mollis.
- Curabitur cursus ullamcorper arcu eu pretium.
- Ut tempor auctor magna sed pulvinar.
-\end_layout
-
-\begin_layout Standard
-Vestibulum nec sapien quis sapien sagittis blandit.
- Integer placerat gravida lacus et posuere.
- Nullam lacus sapien, fringilla sed euismod sagittis, vehicula quis purus.
- Mauris mauris quam, sodales at iaculis facilisis, pulvinar non lectus.
- Maecenas at sagittis sapien.
- Mauris nec leo mi, vel molestie elit.
- Mauris turpis nisi, gravida eget facilisis sit amet, lacinia ut turpis.
- Cras consequat tellus eu dolor sodales cursus.
- Maecenas sodales, nunc id commodo porttitor, augue libero tempus est, non
- semper diam metus quis nisi.
- Suspendisse ac metus nulla.
- Nullam scelerisque dolor eu neque dictum a molestie odio eleifend.
- Nulla rutrum nisl a ipsum mollis id adipiscing lorem suscipit.
- In dolor magna, gravida ut pretium quis, semper at ipsum.
- Fusce venenatis augue ac leo faucibus tempus.
- Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
- inceptos himenaeos.
- Vestibulum pharetra feugiat arcu id imperdiet.
+Para concluir,
+ se presentan las conclusiones,
+ donde se evalúa el cumplimiento de los objetivos iniciales de la investigación,
+ seguidas de recomendaciones que propondrán futuras mejoras para continuar el estudio del tema.
 \end_layout
 
 \end_body

@@ -20,20 +20,19 @@
 %% 			                                            %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[spanish, es-tabla]{babel}
-\title{Título de la tesis \\ Title of the thesis in english}
-\author{Autor: Nombre del autor}
+% babel es cargado automáticamente por LyX basado en la configuración de idioma
+\title{Sistema de Gestión del Horario y Sobrecarga Docente de los profesores de la Universidad de Sancti Spíritus “José Martí Pérez” (UNISS) \\ Management System for Schedules and Faculty Overload of the professors at the University of Sancti Spíritus “José Martí Pérez” (UNISS)}
+\author{Autor: Agustin B. Cañizares Figueroa}
 \dept{DEPARTAMENTO DE INGENIERÍA INFORMÁTICA}
 \career{CARRERA: INGENIERÍA INFORMÁTICA}
 \university{Universidad de Sancti Spíritus «José Martí Pérez»}
-%\crest{\includegraphics[height=0.75\textwidth]{../Figs/uniss-logo-largo.png}}
-\crest{\includegraphics[width=1\textwidth]{../Figs/logo-uniss-FCTE.png}}
-\advisor{Tutor: Nombre del primer tutor \\ Nombre del segundo tutor}
+%\crest{\includegraphics[width=1\textwidth]{logo-uniss-FCTE.pdf}}
+\advisor{Tutor: Ing. Msc. Julio Comapanioni Martínez}
 \degree{Ingeniero Informático}
 %\college{Facultad de Matemática Física y Computación}
-\degreedate{Sancti Spíritus, 2020 \\ Copyright \copyright UNISS}
+\degreedate{Sancti Spíritus, 2026 \\ Copyright \textcopyright\ UNISS}
 
-\renewcommand{\@chapapp}{CAP\'ITULO}
+\renewcommand{\@chapapp}{CAPÍTULO}
 
 \usepackage{hyperref}
 \end_preamble
@@ -796,7 +795,7 @@ status open
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "References/references tesis,References/references tesis-2,References/references"
+bibfiles "References/references"
 options "dcu"
 
 \end_inset
@@ -890,3 +889,6 @@ filename "Appendix2/Appendix2.lyx"
 
 \end_body
 \end_document
+
+
+
